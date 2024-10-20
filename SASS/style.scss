@@ -1,0 +1,73 @@
+/*Variantes*/
+
+$primary-color: white;
+$secondary-color: rgb(228, 208, 142);
+$texto-color: black;
+$hover-color:white;
+$dark-secondary-color:rgb(156, 133, 58);
+
+
+// Partials
+@import "menu";
+@import "productos";
+@import "como_comprar";
+
+
+// Definición de un mixin con parámetros
+@mixin button-styles ($padding, $border-radius, $bg-color) {
+    padding: $padding;
+    border-radius: $border-radius;
+    color: $texto-color;
+    background-color: $secondary-color;
+        :hover {
+        background-color: $dark-secondary-color;
+        color:$hover-color;
+     }}
+  
+  // Uso del mixin en clases
+  .primary-button {
+    @include button-styles (10px 10px, 20px, $secondary-color);
+    text-decoration: none;
+     }
+  
+    .secondary-button {
+    @include button-styles(10px 20px, 5px, $primary-color) ;
+    text-decoration: none; }
+
+
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body{
+    height: 100%;
+}
+
+.inicio {
+    background-image: url("../assets/fotoinicial.jpg");
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50PX;
+            .a {
+                .secondary-button {
+                position: relative;
+                margin-bottom: 500%;
+                :hover {
+                    background-color: $dark-secondary-color;
+                    color:$hover-color;
+               } } }
+    
+             #logo{padding:200px;
+                width: 60px}}
+
+
+
+
