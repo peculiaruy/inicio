@@ -37,6 +37,11 @@ $dark-secondary-color:rgb(156, 133, 58);
     @include button-styles(10px 20px, 5px, $primary-color) ;
     text-decoration: none; }
 
+    a:hover {
+        background-color: $dark-secondary-color;
+        color:$hover-color;
+    }
+
 
 
 *{
@@ -48,7 +53,7 @@ $dark-secondary-color:rgb(156, 133, 58);
 }
 
 .inicio {
-    background-image: url("../assets/fotoinicial.jpg");
+    background-image: url(../ASSETS/fotoinicial.jpg);
     display: flex;
     flex-direction: column;
     background-size: cover;
@@ -59,18 +64,19 @@ $dark-secondary-color:rgb(156, 133, 58);
     align-items: center;
     text-align: center;
     font-size: 50PX;
-            .a {
+            /*a {
                 .secondary-button {
                 position: relative;
                 margin-bottom: 500%;
                 :hover {
                     background-color: $dark-secondary-color;
                     color:$hover-color;
-               } } }
+               } } }*/
+             #entrar {margin-bottom:60px ;}
     
              #logo{padding:200px;
-                width: 60px}}
-
+                width: 80px}}
+            #bienvenido {margin-top: 60px;}
 
 
 

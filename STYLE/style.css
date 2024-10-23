@@ -103,6 +103,11 @@ div .card-title {
   color: white;
 }
 
+a:hover {
+  background-color: rgb(156, 133, 58);
+  color: white;
+}
+
 * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -112,7 +117,7 @@ div .card-title {
 }
 
 .inicio {
-  background-image: url("../assets/fotoinicial.jpg");
+  background-image: url(../ASSETS/fotoinicial.jpg);
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -123,18 +128,25 @@ div .card-title {
   align-items: center;
   text-align: center;
   font-size: 50PX;
+  /*a {
+      .secondary-button {
+      position: relative;
+      margin-bottom: 500%;
+      :hover {
+          background-color: $dark-secondary-color;
+          color:$hover-color;
+     } } }*/
 }
-.inicio .a .secondary-button {
-  position: relative;
-  margin-bottom: 500%;
-}
-.inicio .a .secondary-button :hover {
-  background-color: rgb(156, 133, 58);
-  color: white;
+.inicio #entrar {
+  margin-bottom: 60px;
 }
 .inicio #logo {
   padding: 200px;
-  width: 60px;
+  width: 80px;
+}
+
+#bienvenido {
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
