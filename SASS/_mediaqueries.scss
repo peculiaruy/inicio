@@ -1,0 +1,57 @@
+/*@media screen and (max-width: 750px) {
+    .header { display: none;
+        .nav{
+            .abrir-menu{
+        display: block;    }
+         .cerrar-menu{
+        display: block;   }
+         }
+
+.header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav {
+    flex-direction: column;
+    align-items: end
+    }
+
+    .abrir-menu {display: block;}     
+    .cerrar-menu {display: block;}  
+}
+         
+.abrir-menu {display: none;}     
+.cerrar-menu {display: none;}
+}*/
+
+@media screen and (max-width: 750px) {
+    .header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: $secondary-color;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+    .nav {
+      display: none; // Oculta el menú completo por defecto
+      flex-direction: column;
+      width: 100%;
+    }
+    .abrir-menu {
+      display: block;
+    }
+    .cerrar-menu {
+      display: none;
+    }
+  
+    .nav.mostrar {
+      display: flex; // Activa el menú cuando se haga clic en el botón
+    }
+  }
+  

@@ -1,14 +1,22 @@
 
 .header {
     display: flex;
-    flex-wrap: wrap;
+    position: fixed;
+    /*flex-wrap: wrap;
     flex-direction: row; /*column es columnas, y se puede invertir*/
+    top:0;
+    right: 0;
+    z-index: 1000; // Asegura que el menú esté delante del carrusel
+    width: 100%;
     background-color: $secondary-color;
     padding: 20px;
     border: 2px solid black;
     justify-content: center;
     align-content: space-between 20px;
-
+        
+    
+    
+    .nav{
 
     
     div {
@@ -26,4 +34,6 @@
             color: black;
             justify-content: center;
             text-decoration: none;
-            hover{ color: white}}}
+            hover{ color: white}}}}
+
+.abir-menu {display: none;}
