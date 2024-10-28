@@ -27,7 +27,7 @@
 .cerrar-menu {display: none;}
 }*/
 
-@media screen and (max-width: 750px) {
+/*@media screen and (max-width: 750px) {
     .header {
       position: fixed;
       top: 0;
@@ -47,11 +47,72 @@
       display: block;
     }
     .cerrar-menu {
-      display: none;
+      display: block;
     }
   
     .nav.mostrar {
       display: flex; // Activa el menú cuando se haga clic en el botón
     }
   }
+
+
+  @media (min-width: 750px) {
+    .abrir-menu {
+        display: none;
+      }
+    .cerrar-menu {
+      display: none;
+    }
+    
+
+  }
+  
+
+  */
+  @media screen and (max-width: 750px) {
+    .header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: $secondary-color;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+      z-index: 1000; // Asegura que el menú esté al frente del carrusel
+    }
+
+        .nav {
+        display: none; // Oculta el menú completo por defecto
+        flex-direction: column;
+        width: 100%;
+        &.mostrar {
+        display: flex; // Activa el menú cuando se haga clic en el botón
+      }
+   }
+  
+    .abrir-menu, .cerrar-menu {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 2000; // Coloca los botones encima de todos los elementos
+      font-size: 1.2rem;
+      color: white;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .abrir-menu {
+      display: block;
+    }
+    .cerrar-menu {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 750px) {
+    .abrir-menu, .cerrar-menu {
+      display: none;}}
+  
   
