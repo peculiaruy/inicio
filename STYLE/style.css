@@ -351,4 +351,16 @@ a:hover {
   margin-top: 60px;
 }
 
+#logo {
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

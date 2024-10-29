@@ -81,3 +81,18 @@ $dark-secondary-color:rgb(156, 133, 58);
                 width: 15vw}}
             #bienvenido {margin-top: 60px;}
 
+            $animation-duration: 2s;
+
+            #logo {
+              animation: moveUpDown $animation-duration ease-in-out infinite;
+            
+              @keyframes moveUpDown {
+                0%, 100% {
+                  transform: translateY(0);
+                }
+                50% {
+                  transform: translateY(-10px);
+                }
+              }
+            }
+            
