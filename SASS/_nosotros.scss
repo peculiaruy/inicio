@@ -1,15 +1,80 @@
 
-.bodynosotros  {
-    display: grid;
+/*.bodynosotros  {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row; 
     .nosotros1{
 
         background-color: $dark-secondary-color;
         padding: 20px;
+        margin-top: 200px;
         border: 2px solid black;
         justify-content: center;
-        align-content: space-between 20px;
-        color: white;
-        width: vw30;
-  }}
+        /*align-content: space-between 20px;*/
+        /*color: white;
+        width: 100%;
+         }
+        .nosotros2 {
+        width: wv 30px;
+        }}
+        */
+/*.prueba {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.bodynosotros {
+    width: 20px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 200px;
+#logonos {
+    width: wv 10%;
+}
+
+}*/
+
+.prueba {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 100px; // Para separar el contenido del header sin margin-top en .bodynosotros
+  }
+  
+  .bodynosotros {
+    margin-top: 50px;
+    width: 100%; // Ajuste a pantalla completa
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  
+    #logonos {
+      width: 15vw; // Ajuste responsivo para el logo
+    }
+    #imgnos {
+        width: 50vw; 
+        border-radius: 3%;
+    }
+
+    .nosotros1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros2 {
+      // Otras propiedades específicas de cada uno...
+    }
+  
+    // Hacer que el grid sea una sola columna en pantallas más pequeñas
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      
+      #logonos {
+        width: 25vw; // Logo más pequeño en pantallas pequeñas
+      }
+    }
+  }
+  

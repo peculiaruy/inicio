@@ -116,7 +116,7 @@
 .header {
   display: flex;
   position: fixed;
-  /*flex-wrap: wrap;
+  flex-wrap: wrap;
   flex-direction: row; /*column es columnas, y se puede invertir*/
   top: 0;
   right: 0;
@@ -183,19 +183,76 @@ div .card-title {
   margin: 20px;
 }
 
+/*.bodynosotros  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    .nosotros1{
+
+        background-color: $dark-secondary-color;
+        padding: 20px;
+        margin-top: 200px;
+        border: 2px solid black;
+        justify-content: center;
+        /*align-content: space-between 20px;*/
+/*color: white;
+width: 100%;
+ }
+.nosotros2 {
+width: wv 30px;
+}}
+*/
+/*.prueba {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
 .bodynosotros {
-  display: grid;
+    width: 20px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 200px;
+#logonos {
+    width: wv 10%;
+}
+
+}*/
+.prueba {
+  display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.bodynosotros {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.bodynosotros #logonos {
+  width: 15vw;
+}
+.bodynosotros #imgnos {
+  width: 50vw;
+  border-radius: 3%;
 }
 .bodynosotros .nosotros1 {
-  background-color: rgb(156, 133, 58);
-  padding: 20px;
-  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  align-content: space-between 20px;
-  color: white;
-  width: vw30;
+}
+@media (max-width: 768px) {
+  .bodynosotros {
+    grid-template-columns: 1fr;
+  }
+  .bodynosotros #logonos {
+    width: 25vw;
+  }
 }
 
 .bodyestampas {
