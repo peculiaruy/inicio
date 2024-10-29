@@ -1,7 +1,14 @@
 #comocomprar {
     display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 200px;
     flex-direction: row;
     align-items: top;
+    width: 100%;
+    gap: 30px;
+
         .card-body {margin: 20px;}
         
         .card {
@@ -19,6 +26,7 @@ div .card-title {    font-size: 20px;
     text-align: center;
     margin: 20px;
 }
+
 
 
 

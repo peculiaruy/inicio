@@ -26,6 +26,21 @@
         </header>
 
   </head>
+  <header>
+    <div class="header">
+      <button class="abrir-menu">  Abrir </button>
+      <button class="cerrar-menu">  Cerrar </button>
+      <div class="nav">
+        <div> <a href="../index.html" > INICIO  </a></div>
+        <div> <a href= "nosotros.html"> NOSOTROS </a>     </div>
+        <div> <a href="productos.html"> PRODUCTOS </a>       </div>
+        <div> <a href="como_comprar.html"> COMO COMPRAR</a>       </div>
+        <div> <a href="estampas.html"> ESTAMPAS </a>       </div>
+        <div> <a href="contacto.html"> CONTACTO</a>       </div>
+      </div>
+    </div>
+   
+</header>
   <body id="bodyestampas">
     <div class= "estampas1">
 
@@ -150,7 +165,20 @@
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+      <script>
+        document.querySelector('.abrir-menu').addEventListener('click', () => {
+            document.querySelector('.nav').classList.add('mostrar');
+            document.querySelector('.abrir-menu').style.display = 'none';
+            document.querySelector('.cerrar-menu').style.display = 'block';
+        });
+      
+        document.querySelector('.cerrar-menu').addEventListener('click', () => {
+            document.querySelector('.nav').classList.remove('mostrar');
+            document.querySelector('.abrir-menu').style.display = 'block';
+            document.querySelector('.cerrar-menu').style.display = 'none';
+        });
+      </script>
+    </body>
 </html>
 
 
