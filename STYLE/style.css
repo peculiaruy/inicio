@@ -276,6 +276,10 @@ width: wv 30px;
   width: 33% !important;
 }
 
+.body {
+  margin-top: 100px;
+}
+
 .primary-button {
   padding: 10px 10px;
   border-radius: 20px;
