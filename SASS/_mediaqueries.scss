@@ -114,5 +114,13 @@
   @media (min-width: 750px) {
     .abrir-menu, .cerrar-menu {
       display: none;}}
+
+@media (max-width: 768px) {
+  .contactobody {
+    flex-direction: column; // Cambia a una sola columna en pantallas pequeñas
+    align-items: center; // Centra los elementos verticalmente
+
+
+}}
   
   
